@@ -18,7 +18,7 @@ export const defaultStorage = (): StorageInterface => {
   return {
     // interface options
     hideTtSidebarContent: true,
-    hideTtSearchBar: true,
+    hideTtSearchBar: false,
     minimizeTweetActions: true,
     // search options
     options: defaultOptions(),

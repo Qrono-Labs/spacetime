@@ -112,10 +112,7 @@ export default function ThreadHelper({ inHome }) {
     'webRequestPermission',
     true
   );
-  const [hideTtSearchBar, setHideTtSearchBar] = useStorage(
-    'hideTtSearchBar',
-    null
-  );
+  const hideTtSearchBar = false
 
   return (
     <div
@@ -136,7 +133,7 @@ export default function ThreadHelper({ inHome }) {
       )}
       {!answeredSurvey && (
         <Banner
-          text="Help us improve ThreadHelper!"
+          text="June 14 - July 5: New York City"
           redirect={thSurveyUrl}
           onDismiss={() => setAnsweredSurvey(true)}
         />

@@ -16,10 +16,10 @@ export function createSidebarContainerHome() {
 }
 // impure
 export async function injectSidebarContainerHome(thBar: Element) {
-  const hideTtSearchBar = await getStg('hideTtSearchBar');
+  const hideTtSearchBar = false
   const hideTtSidebarContent = await getStg('hideTtSidebarContent');
   if (hideTtSearchBar) {
-    removeSearchBar();
+    // removeSearchBar();
   }
   if (hideTtSidebarContent) {
     removeSidebarContent();

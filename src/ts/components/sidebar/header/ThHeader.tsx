@@ -178,7 +178,7 @@ export function ApiSearchBar() {
         class="flex items-center flex-grow border-accent"
         // style={{ borderColor: 'var(--accent-color)' }}
       >
-        {!showSearchBar ? (
+        {/* {!showSearchBar ? (
           <StgFlagTooltip
             content={
               'Click to search Twitter.\n Press Enter for results page. \n Shortcut: Ctrl+/'
@@ -208,7 +208,7 @@ export function ApiSearchBar() {
               <SearchIcon class="h-6 w-6 fill-current stroke-current" />
             </button>
           </StgFlagTooltip>
-        ) : null}
+        ) : null} */}
         {showSearchBar ? (
           <div
             class="inline-flex items-center h-8 pl-2 pr-5 ml-2 rounded-full text-sm focus-within:ring-2 ring-current w-full text-accent bg-searchBarBg"
@@ -252,15 +252,19 @@ export function ApiSearchBar() {
             />
           </div>
         ) : (
+          <div>
           <div class="inline-flex items-baseline">
             <span class="text-2xl font-bold hidden lg:inline">
-              ThreadHelper
+              SpaceTime
             </span>
-            <span class="text-2xl font-bold lg:hidden">TH</span>
             {DEBUG ? (
-              <span class="text-gray-500 sm:hidden md:hidden lg:block">{` v${process.env.VERSION}`}</span>
-            ) : null}
+              <span class="text-gray-500 sm:hidden md:hidden lg:block">{' alpha'}</span>
+              ) : null}
           </div>
+              <div>
+                <span><b>June 14 - July 5:</b> New York City{fetch('https://fastapi-template.ajroberts0417.repl.co/spacetimes?handle=@__drewface').then(response => response.json()).then(data => console.log(data))}</span>
+              </div>
+            </div>
         )}
       </div>
 
@@ -268,7 +272,7 @@ export function ApiSearchBar() {
         <div class="flex items-center">
           <NinjaSyncIcon />
         </div>
-        <SettingsButton />
+        {/* <SettingsButton /> */}
       </div>
     </div>
   );

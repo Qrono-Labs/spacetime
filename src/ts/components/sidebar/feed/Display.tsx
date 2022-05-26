@@ -121,7 +121,6 @@ export function DisplayController(props: any) {
       {showUserSearch(apiUsers, feedDisplayMode) && (
         <UserDisplay results={apiUserResults} />
       )}
-      {makeFeedDisplay(feedDisplayMode)}
     </div>
   );
 }
